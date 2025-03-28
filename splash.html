@@ -1,0 +1,62 @@
+           </div>
+    </div>
+
+  </template>
+
+    <script>
+        /**
+         * `splash-screen`
+         * Splash Screen element to show custom splash screen in the web page
+         *
+         * @customElement
+         * @polymer
+         * @demo demo/index.html
+         */
+        class SplashScreen extends Polymer.Element {
+            static get is() {
+                return 'splash-screen';
+            }
+            static get properties() {
+                return {
+                    align: {
+                        type: String,
+                    },
+                    background: {
+                        type: String
+                    },
+                    show: {
+                        type: Boolean,
+                        observer: '_closeSplash'
+                    },
+                    destroy: {
+                        type: Boolean
+                    },
+                    backgroundStyle: {
+                        type: String
+                    }
+                };
+            }
+
+            _destroyFunction(d) {
+                if (d) {
+                    this.remove();
+                } else {
+                    this.updateStyles({
+                        'display': 'none'
+                    });
+                }
+            }
+            _closeSplash(s) {
+                if (!s) {
+                    this._destroyFunction(this.destroy);
+                } else {
+                    this.updateStyles({
+                        '--splash-screen-background': this.backgroundStyle || undefined
+                    });
+                }
+            }
+        }
+
+        window.customElements.define(SplashScreen.is, SplashScreen);
+    </script>
+</dom-module>

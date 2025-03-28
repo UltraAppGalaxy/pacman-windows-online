@@ -1,0 +1,82 @@
+JS Tutorial
+
+JS Exercise
+
+JS Interview Questions
+
+JS Array
+
+JS String
+
+JS Object
+
+JS Operator
+
+JS Date
+
+JS Error
+
+JS Projects
+
+JS Set
+
+JS Map
+
+JS RegExp
+
+JS Math
+
+JS Number
+
+JS Boolean
+
+JS Examples
+
+JS Free JS Course
+
+JS A to Z Guide
+
+JS Formatter
+
+▲
+
+Open In App
+
+Create a Splash Page App in HTML CSS & JavaScript
+
+Last Updated : 26 Jul, 2024
+
+The Splash Screen is the UI element that appears as the initial screen or the loading screen. Splash Page Application consists of a styled animative splash screen effect which automatically makes the curtain opening splash effect into the application for a specific time and renders the dynamic content once the effect is been completed. We will develop this Splash Page Animative effect using HTML, CSS, and JavaScript.
+
+Preview Image:
+
+￼
+
+Prerequisites:
+
+HTML
+
+CSS
+
+JavaScript
+
+Approach:
+
+Create the basic layout or structure of the application using variousHTML tagslike <h1>,<h3>,<div>, etc. Also, link all the essential external libraries with theCDN links.
+
+Create the overall structure for the splash screen inside the #splash div. Add all the other animative components like Loading Spinner, title, etc.
+
+Add CSS styling to style the splash screen, dynamic content, and other elements. Also, implement the keyframe animations for various effects like bouncing, etc.
+
+In the JavaScript file, use theDOMContentLoadedevent to initiate the Splash Screen logic. Set the loading time and hide the splash screen while displaying the dynamic content.
+
+Project Structure:
+
+￼
+
+Example: This example describes the basic implementation for a Splash Page App in HTML CSS and JavaScript
+
+HTMLCSSJavaScript
+
+body { font-family: 'Montserrat', sans-serif; margin: 0; padding: 0; height: 100vh; overflow: hidden; background: linear-gradient(135deg, #3498db, #8e44ad); } #preloader { position: fixed; width: 100%; height: 100%; background: #fda56b; display: flex; align-items: center; justify-content: center; z-index: 9999; } #loader { border: 8px solid #f3f3f3; border-top: 8px solid #3498db; border-radius: 50%; width: 50px; height: 50px; animation: spin 1s linear infinite; } @keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } } #splash { height: 100vh; display: flex; align-items: flex-end; } .curtain { width: 100%; height: 100%; position: absolute; bottom: 0; overflow: hidden; animation: curtainAnimation 4s ease-out forwards, gradientAnimation 3s ease-out forwards; } .splash-content { text-align: center; padding: 20px; color: #fff; position: relative; z-index: 2; } .splash-content i { font-size: 2em; } .additional-splash-effects { position: absolute; bottom: 0; width: 100%; height: 100%; background: linear-gradient(135deg, #ff6b6b, #8e44ad, #3498db, #e74c3c); animation: backgroundAnimation 20s infinite alternate; z-index: 1; } #content { text-align: center; position: relative; } .card { background-color: #dbca34; padding: 20px; border-radius: 10px; box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); margin: 20px; color: rgb(255, 0, 0); width: 300px; animation: cardAnimation 1.5s ease-out; } .card i { margin-right: 5px; } .animated-emoji { font-size: 2em; margin-top: 10px; animation: bounce 1s infinite; } .animated-title { animation: fadeInDown 1.5s ease-out; } .animated-subtitle { animation: fadeInUp 1.5s ease-out; } @keyframes curtainAnimation { 0% { transform: translateY(100%); } 100% { transform: translateY(0); } } @keyframes gradientAnimation { 0% { opacity: 0; } 100% { opacity: 1; } } @keyframes backgroundAnimation { 0% { background-position: 0% 50%; } 100% { background-position: 100% 50%; } } @keyframes cardAnimation { 0% { opacity: 0; transform: translateY(20px); } 100% { opacity: 1; transform: translateY(0); } } @keyframes bounce { 0%, 20%, 50%, 80%, 100% { transform: translateY(0); } 40% { transform: translateY(-20px); } 60% { transform: translateY(-10px); } } @keyframes fadeInDown { 0% { opacity: 0; transform: translateY(-20px); } 100% { opacity: 1; transform: translateY(0); } } @keyframes fadeInUp { 0% { opacity: 0; transform: translateY(20px); } 100% { opacity: 1; transform: translateY(0); } }
+
