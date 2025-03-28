@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  </head>
+  <body><dt>&nbsp;
+      <meta content="text/html; charset=windows-1252" http-equiv="content-type">
+      <title>Michael Hardy's Online 'Pac-Man Game!</title>
+      <!-- last updated: Sun May 19 21:43:14 PDT 2019 -->
+      <!-- Lock viewport on mobile devices. -->
+      <!--
+    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" />    -->
+      <!-- Allow page to be saved as web app on iOS. -->
+      <meta name="apple-mobile-web-app-capable" content="yes">
+      <!-- Hide status bar -->
+      <meta names="apple-mobile-web-app-status-bar-style" content="black-translucent">
+      <!-- icon used for iOS Web App -->
+      <link rel="apple-touch-icon-precomposed" href="icon/ios_icon.png">
+      <link rel="icon" type="image/png" href="icon/favicon.png">
+      <style>
+        body {
+            margin:0;
+            background: #000;
+        }
+        @font-face {
+            font-family: 'ArcadeR';
+            src: url('font/ARCADE_R.TTF');
+            /*
+            src: url('font/PressStart2P.ttf');
+            */
+        }
+        #canvas-warning {
+            color: #FF0;
+            font-size: 1.5em;
+                       body {
+    background-image: url('img/PacmanBackground2.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+</style> <style>
+body {
+    background-image: url('img/PacmanBackground2.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+  
+</style> <dl }="" <="" dt="">
+      </dl>
+      <script src="HardysPacman.js"></script>
+      <div style="font-family: ArcadeR"> </div>
+      <canvas id="canvas">
+        <div id="canvas-warning">Your browser does not support </div>
+      </canvas></dt>
+    <dt><canvas></canvas></dt>
+    <dt><canvas>
+        <div>HTML Canvas. Please upgrade! </div>
+      </canvas><canvas> </canvas><canvas> </canvas> <canvas id="atlas" style="display:none"></canvas>
+    </dt>
+    <a href="/index.html"> <img src="i8mg/goback.png"> </a>
+  </body>
+</html>
